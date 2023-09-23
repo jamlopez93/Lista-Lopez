@@ -1,0 +1,4 @@
+<div *ngFor="let student of students" [ngClass]="{'perez': student.apellido === 'Pérez', 'lopez': student.apellido === 'López'}">
+ Nombres: {{ student.name | mayuscula }} - Apellido: {{ student.apellido | mayuscula }}
+</div>
+
